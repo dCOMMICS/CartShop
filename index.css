@@ -22,8 +22,9 @@ body {
     margin-bottom: 45px;
 }
 
-.navbar h2 {
-    font-weight: 600;
+.navbar h1 {
+    justify-items: start;
+    
 }
 
 .cart {
@@ -65,15 +66,24 @@ body {
 
  .mboga {
     display: grid;
-    grid-template-columns: repeat(10,223px);
-    gap: 30px;
-    justify-content: center;
+    /* grid-template-columns: repeat(10,223px); */
+   /* flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; */
+    grid-template-columns: 200px 200px 200px repeat;
+    grid-template-rows: 200px 200px 200px repeat;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+
     }
 .mbogah {
     border: 2px solid #052e16;
     border-radius: 4px;
 }
 
+.details {
+
+}
 
 
 /* 

@@ -1,0 +1,143 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the navbar */
+.navbar {
+   
+    align-items: center;
+    padding: 10px 20px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #052e16;
+    color: white;
+    
+
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart i {
+    font-size: 24px;
+}
+
+.cartAmount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Grid container for products */
+.mboga {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Individual product card */
+.mbogah {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.mbogah img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.details h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.details p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.price-quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.price-quantity h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.price-quantity button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.price-quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 0 5px;
+    padding: 5px;
+}
+
+.add-to-cart-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #218838;
+}
+
+/* Hover effect for product card */
+.mbogah:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .price-quantity h2 {
+        font-size: 20px;
+    }
+
+    .add-to-cart-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
